@@ -1,0 +1,14 @@
+CREATE TABLE `medicine` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `first_name` VARCHAR(45) NULL,
+  `last_name` VARCHAR(45) NULL,
+  `middle_name` VARCHAR(45) NULL,
+  `occupation` VARCHAR(45) NULL,
+  `age` INT NULL,
+  `dob` DATE NULL,
+  `created_on` TIMESTAMP NULL,
+  `updated_on` TIMESTAMP NULL,
+  PRIMARY KEY (`id`));
+
+
+
