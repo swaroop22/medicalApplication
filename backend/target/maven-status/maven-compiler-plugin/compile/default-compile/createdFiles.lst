@@ -1,0 +1,10 @@
+com/paragon/MedicineController.class
+com/paragon/Application$SecurityConfiguration.class
+com/paragon/domain/MedicineWrapper.class
+com/paragon/CORSFilter.class
+com/paragon/services/MedicineService.class
+com/paragon/Application.class
+com/paragon/HelloController.class
+com/paragon/RepositoryConfig.class
+com/paragon/models/Medicine.class
+com/paragon/repos/MedicineRepository.class

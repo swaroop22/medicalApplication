@@ -2,6 +2,7 @@ package com.paragon.test;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.context.embedded.LocalServerPort;
@@ -13,6 +14,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
+@Ignore
 @SpringBootTest(webEnvironment=WebEnvironment.RANDOM_PORT)
 public class ApplicationTests {
 
