@@ -30,12 +30,8 @@ public class MedicineService {
 	 * @return
 	 */
 	public List<Medicine> getAllMedicines() {
-		Iterable<Medicine> medicines = medicineRepository.findAll();
 		List<Medicine> medicinesList = new ArrayList<>();
-		Iterator<Medicine> it = medicines.iterator();
-		while(it.hasNext()){
-			medicinesList.add(it.next());
-		}
+		medicineRepository.findAll().forEach(x -> medicinesList.add(x));
 		return medicinesList;
 	}
 

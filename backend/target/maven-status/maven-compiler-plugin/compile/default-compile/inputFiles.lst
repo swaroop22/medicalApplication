@@ -1,0 +1,9 @@
+/Users/saismac/workspace/medicalApplication/backend/src/main/java/com/paragon/domain/MedicineWrapper.java
+/Users/saismac/workspace/medicalApplication/backend/src/main/java/com/paragon/repos/MedicineRepository.java
+/Users/saismac/workspace/medicalApplication/backend/src/main/java/com/paragon/Application.java
+/Users/saismac/workspace/medicalApplication/backend/src/main/java/com/paragon/services/MedicineService.java
+/Users/saismac/workspace/medicalApplication/backend/src/main/java/com/paragon/RepositoryConfig.java
+/Users/saismac/workspace/medicalApplication/backend/src/main/java/com/paragon/HelloController.java
+/Users/saismac/workspace/medicalApplication/backend/src/main/java/com/paragon/CORSFilter.java
+/Users/saismac/workspace/medicalApplication/backend/src/main/java/com/paragon/models/Medicine.java
+/Users/saismac/workspace/medicalApplication/backend/src/main/java/com/paragon/MedicineController.java
