@@ -1,52 +1,29 @@
 package com.patient.models;
-
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "SUBCANCERTYPE1")
+    @Table(name = "subcancertype1")
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class SubCancerType1 implements Serializable {
     @Column(name = "pk")
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column(name = "title")
     private String title;
 
-    @Column(name = "CANCERTYPEID")
+    @Column(name = "cancer_type_id")
     private int CancerTypeId;
 
-    public int getCancerTypeId() {
-        return CancerTypeId;
-    }
-
-    @Override
-    public String toString() {
-        return "SubCancerType1{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", CancerTypeId=" + CancerTypeId +
-                '}';
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setCancerTypeId(int cancerTypeId) {
-        CancerTypeId = cancerTypeId;
-    }
+    @ManyToOne
+    @JoinColumn(name = "id")
+    private CancerType cancerType;
 }

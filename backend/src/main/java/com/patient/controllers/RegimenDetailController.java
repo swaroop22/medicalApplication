@@ -28,6 +28,12 @@ public class RegimenDetailController {
         return regimenDetailService.getRegimenDetailId(id);
     }
 
+
+    @RequestMapping(value = "/regimenDetailController/{id}/names", produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.GET)
+    public List<RegimenDetail> getregimenDetailId(@PathVariable("id") Integer id) {
+        return regimenDetailService.getRegimenDetailById(id);
+    }
+
     /**
      * This method is used for both update and add.
      *
@@ -56,7 +62,7 @@ public class RegimenDetailController {
      * @throws JsonMappingException
      * @throws IOException
      */
-    @RequestMapping(value = "/patientController/{id}", produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.DELETE)
+    @RequestMapping(value = "/regimenDetailController/{id}", produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.DELETE)
     public long deleteRegimenDetail(@PathVariable("id") Long id) {
         regimenDetailService.deleteRegimenDetail(id);
         return id;

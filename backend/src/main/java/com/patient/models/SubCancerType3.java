@@ -4,15 +4,15 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Entity
-@Table(name = "subcancertype2")
+@Table(name = "subcancertype3")
 @AllArgsConstructor
 @Builder
 @Data
 @NoArgsConstructor
-public class SubCancerType2 implements Serializable {
+public class SubCancerType3 {
+
     @Column(name = "pk")
     @Id
     private int id;
@@ -20,10 +20,10 @@ public class SubCancerType2 implements Serializable {
     @Column(name = "title")
     private String title;
 
-    @Column(name = "subcancer_type1_id")
-    private int SubCancerTypeId1;
+    @Column(name = "subcancer_type2_id")
+    private int SubCancerTypeId2;
 
     @ManyToOne
     @JoinColumn(name = "id")
-    private SubCancerType1 subCancerType1;
+    private SubCancerType2 subCancerType2;
 }
